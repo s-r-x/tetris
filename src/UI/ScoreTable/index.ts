@@ -36,7 +36,8 @@ export class ScoreTable extends Container {
     this.addChild(title);
     this.addChild(table);
 
-    title.x = this.width / 2 - title.width / 2;
     stage.addChild(this);
+    title.x = this.width / 2 - title.width / 2;
+    this.x = stage.width / 2 - this.width / 2;
   }
 }
