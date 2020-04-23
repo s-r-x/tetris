@@ -41,6 +41,7 @@ export class ScoreState {
       linesScore += meta.oneColorRows * config.perComboLine;
     }
     linesScore *= meta.level;
+    this.lines += meta.completedRows;
 
     acc += linesScore;
     this.incScore(acc);
